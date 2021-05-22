@@ -36,7 +36,7 @@ public class AppCardDeliveryTest {
         $("[data-test-id='phone'] .input__control").setValue("+00000000000");
         $("[data-test-id='agreement']").click();
         $(".button").click();
-        $(withText("Успешо!")).shouldBe(visible, Duration.ofSeconds(15));
+        $(withText("Аспешно!")).shouldBe(visible, Duration.ofSeconds(15));
     }
 
 

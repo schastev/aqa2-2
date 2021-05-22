@@ -52,7 +52,7 @@ public class AppCardDeliveryTest {
         $("[data-test-id='agreement']").click();
 
         $("[data-test-id='city'] .input__control").sendKeys("Мо");
-        $$(".menu-item .menu-item__control").find(exactText("Моска")).click();
+        $$(".menu-item .menu-item__control").find(exactText("Москва")).click();
         $("[data-test-id='city'] .input__control").shouldHave(attribute("value", "Москва"));
 
         $(".button").click();

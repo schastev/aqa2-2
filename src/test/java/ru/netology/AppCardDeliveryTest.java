@@ -5,7 +5,6 @@ import org.openqa.selenium.Keys;
 
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -36,7 +35,7 @@ public class AppCardDeliveryTest {
         $("[data-test-id='phone'] .input__control").setValue("+00000000000");
         $("[data-test-id='agreement']").click();
         $(".button").click();
-        $(withText("Аспешно!")).shouldBe(visible, Duration.ofSeconds(15));
+        $(withText("Успешно!")).shouldBe(visible, Duration.ofSeconds(15));
     }
 
 

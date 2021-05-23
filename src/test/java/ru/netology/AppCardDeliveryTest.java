@@ -96,6 +96,6 @@ public class AppCardDeliveryTest {
 
         $(".button").click();
         $(withText("Успешно!")).shouldBe(visible, Duration.ofSeconds(15));
-        assertEquals(actual, 8);
+        assertEquals(actual, expected);
     }
 }
